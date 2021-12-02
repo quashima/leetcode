@@ -12,6 +12,7 @@ class Solution:
         roman_array_r = []
         nums_r = reversed(str(num))
         for i, num in enumerate(nums_r):
+            # check ones place
             if (i == 0):
                 roman_array_r.append(
                     toRoman(
@@ -21,6 +22,7 @@ class Solution:
                     )
                 )
 
+            # check tens place
             if (i == 1):
                 roman_array_r.append(
                     toRoman(
@@ -30,6 +32,7 @@ class Solution:
                     )
                 )
 
+            # check hundreds place
             if (i == 2):
                 roman_array_r.append(
                     toRoman(
@@ -39,6 +42,7 @@ class Solution:
                     )
                 )
 
+            # check thousands place
             if (i == 3):
                 roman_array_r.append(
                     toRoman(
